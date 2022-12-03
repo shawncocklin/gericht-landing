@@ -1,6 +1,6 @@
-import SectionTitle from './SectionTitle/SectionTitle'
-import Cta from './Cta/Cta'
-import MenuItem from './Menuitem/MenuItem'
-import Navbar from './Navbar/Navbar'
+import SectionTitle from './sectionTitle/SectionTitle'
+import Cta from './cta/Cta'
+import MenuItem from './menuitem/MenuItem'
+import Navbar from './navbar/Navbar'
 
 export { SectionTitle, Cta, MenuItem, Navbar }

@@ -1,0 +1,142 @@
+.navbar {
+  background-color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 32px 120px; */
+  padding: 1rem 2rem;
+  font-weight: 600;
+}
+
+.navbar_logo img {
+  max-width: 150px;
+}
+
+.navbar_primary-nav {
+  flex: 1;
+}
+
+.navbar_primary-nav_links,
+.navbar_mobile-primary-nav_links {
+  list-style: none;
+}
+
+.navbar_primary-nav_links li {
+  margin-right: 32px;
+}
+
+.navbar_primary-nav_links li:hover,
+.navbar_primary-nav_links li:focus-visible {
+  border-bottom: 1px solid var(--color-golden);
+}
+
+.navbar_login a:hover,
+.navbar_login a:focus-visible {
+  border-bottom: 1px solid var(--color-golden);
+}
+
+.line {
+  width: 1px;
+  height: 40px;
+  background-color: var(--color-grey);
+  margin-inline: 3rem;
+}
+
+.navbar_mobile {
+  display: none;
+}
+
+.navbar_mobile-primary-nav_links {
+  --spacer: 2rem;
+  flex-direction: column;
+}
+
+.navbar_mobile-primary-nav_links li {
+  color: var(--color-golden);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 29.9px;
+  font-size: 23px;
+}
+
+.navbar_mobile-primary-nav_links li:hover,
+.navbar_mobile-primary-nav_links li:focus-visible {
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.navbar_mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-black);
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.overlay-open {
+  cursor: pointer;
+}
+
+.overlay-open:hover,
+.overlay-open:focus-visible {
+  color: var(--color-golden);
+} 
+
+.overlay-close {
+  position: absolute;
+  cursor: pointer;
+  color: var(--color-golden);
+  top: 20px;
+  right: 20px;
+}
+
+.overlay-close:hover,
+.overlay-close:focus-visible {
+  color: var(--color-white);
+}
+
+.sm-screen-login {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar_mobile {
+    display: block;
+  }
+
+  .navbar_primary-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar_login {
+    flex-direction: column;
+  }
+
+  .line {
+    height: 1px;
+    width: 40px;
+    margin-block: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .line,
+  .navbar_login-book,
+  .lg-screen-login {
+    display: none;
+  }
+
+  .sm-screen-login {
+    display: inline;
+  }
+
+  
+}

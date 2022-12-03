@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.flow *:where(:not(:first-child)) {
+  margin-top: var(--spacer, 1rem);
+}
+
 .app__bg {
   background: url('./assets/bg.png');
   background-position: center;

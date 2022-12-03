@@ -16,7 +16,7 @@ import {
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App app__bg'>
       <Navbar />
       <Hero />
       <About />
