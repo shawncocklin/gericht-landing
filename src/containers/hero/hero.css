@@ -1,0 +1,51 @@
+.hero {
+  background-color: var(--color-black);
+  display: flex;
+  gap: 180px;
+
+  padding-bottom: 244px;
+}
+
+.hero-content {
+  --spacer: 32px;
+  flex: 1;
+}
+
+.hero-content .hero-content_body {
+  font-family: var(--font-alt);
+  color: var(--color-grey);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  margin-block: 32px;
+}
+
+.hero-content button {
+  border: none;
+  background-color: var(--color-golden);
+  font-family: var(--font-base);
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  padding: 8px 32px;
+  cursor: pointer;
+}
+
+.hero-content button:hover,
+.hero-content button:focus-visible {
+  background-color: var(--color-white);
+}
+
+.hero-img {
+  flex: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    gap: 100px;
+  }
+}

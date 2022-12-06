@@ -1,0 +1,32 @@
+.section-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title img {
+  margin-block: 8px;
+}
+
+.section-title h1 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+
+  /* max-width: 500px; */
+}
+
+@media screen and (max-width: 1100px) {
+  .section-title h1 {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section-title h1 {
+    font-size: 48px;
+  }
+}
